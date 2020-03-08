@@ -1,0 +1,12 @@
+python eval.py \
+	--dump_images 0 \
+	--dump_json 0 \
+	--num_images 2489 \
+	--model log_no_xe/model-best.pth \
+	--input_fc_dir /data/VG/parabu_fc \
+	--input_att_dir /data/VG/parabu_att \
+	--infos_path log_xe_flat/infos_trans-best.pkl \
+	--eval_results_dir eval_results2 \
+        --max_length 30 \
+	--beam_size 2 \
+	--language_eval 1
